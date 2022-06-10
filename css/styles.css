@@ -539,7 +539,7 @@ section {
   border-radius: 50%;
 }
 .fotter-masters-soc-icon {
-  fill: var(--icon-color);
+  fill: var(--white-color);
 }
 .fotter-masters-soc-link:hover .fotter-masters-soc-icon,
 .fotter-masters-soc-link:focus .fotter-masters-soc-icon {
