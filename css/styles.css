@@ -127,22 +127,34 @@ section {
 .contacts-links .link-item + .link-item {
   margin-left: 50px;
 }
+
+.link-item {
+  display: flex;
+}
 .link-item .link {
   padding: 32px 0px;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
-
+.mail-icon {
+  margin-right: 10px;
+}
+/* .mail-icon:hover,
+.mail-icon:focus {
+  fill: var(--accent-color);
+} */
 .contacts-links .link {
   color: var(--primary-text-color);
-  width: 135px;
-  height: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  align-items: center;
+  justify-content: center;
 }
 .contacts-links .link:hover,
-.contacts-links .link:focus {
+.mail-icon .contacts-links .link:focus .mail-icon {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 /* Main */
 .first-section {
