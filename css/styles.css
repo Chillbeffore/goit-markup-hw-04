@@ -139,10 +139,17 @@ section {
 .mail-icon {
   margin-right: 10px;
 }
-/* .mail-icon:hover,
-.mail-icon:focus {
+.tel-icon {
+  margin-right: 10px;
+  width: 10px;
+  height: 20px;
+}
+
+.mail-icon:hover,
+.link .mail-icon:focus .link {
   fill: var(--accent-color);
-} */
+  color: var(--accent-color);
+}
 .contacts-links .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -152,10 +159,11 @@ section {
   justify-content: center;
 }
 .contacts-links .link:hover,
-.mail-icon .contacts-links .link:focus .mail-icon {
-  color: var(--accent-color);
+.contacts-links .link:focus {
   fill: var(--accent-color);
+  color: var(--accent-color);
 }
+
 /* Main */
 .first-section {
   background-color: var(--footer-color);
@@ -234,11 +242,11 @@ section {
 }
 .icon-antenna::before {
   background-image: url(../img/antenna.svg);
-  background-size: 66px 70px;
+  background-size: 70px 70px;
 }
 .icon-clock::before {
   background-image: url(../img/clock.svg);
-  background-size: 66px 70px;
+  background-size: 70px 70px;
 }
 .icon-diagram::before {
   background-image: url(../img/diagram.svg);
@@ -246,7 +254,7 @@ section {
 }
 .icon-astronaut::before {
   background-image: url(../img/astronaut.svg);
-  background-size: 66px 70px;
+  background-size: 70px 70px;
 }
 .cards-list {
   display: flex;
@@ -274,18 +282,25 @@ section {
   color: var(--primary-text-color);
   margin-bottom: 0px;
 }
+.third-section {
+  padding-bottom: 94px;
+}
 .third-section .section-list {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
   padding-top: 0px;
-
-  padding-bottom: 94px;
 }
 
 .section-list .photos + .photos {
   margin-left: 30px;
+}
+
+.photo-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .photos img {
@@ -374,9 +389,15 @@ section {
   line-height: 19px;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 16px;
+}
+.div-card {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .masters-soc-list {
   display: flex;
+  padding: 0;
 }
 .masters-soc-item {
   width: 44px;
@@ -412,8 +433,13 @@ section {
   padding-bottom: 94px;
 }
 .five-section .primary-text {
-  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
   margin-bottom: 50px;
+  color: var(--secondary-text-color);
+  text-align: center;
 }
 .company-cards-list {
   display: flex;
@@ -440,6 +466,10 @@ section {
 .company-card-icon {
   fill: var(--icon-color);
 }
+.company-card-item:hover,
+.company-card-item:focus {
+  border-color: var(--accent-color);
+}
 .company-cards-link:hover .company-card-icon,
 .company-cards-link:focus .company-card-icon {
   fill: var(--accent-color);
@@ -454,12 +484,12 @@ section {
 
 .subsection {
   display: flex;
+  align-items: center;
 }
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer .footer-link {
-  width: 145px;
   display: inline-block;
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -504,10 +534,10 @@ section {
   width: 215px;
 }
 .footer-soc {
-  padding-top: 20px;
   margin-left: 70px;
 }
 .fotter-primary-text {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -518,6 +548,7 @@ section {
 }
 .fotter-masters-soc-list {
   padding: 0;
+  margin: 0;
   display: flex;
 }
 .fotter-masters-soc-item {
