@@ -466,14 +466,16 @@ section {
 .company-card-icon {
   fill: var(--icon-color);
 }
-.company-card-item:hover,
-.company-card-item:focus {
-  border-color: var(--accent-color);
-}
+
 .company-cards-link:hover .company-card-icon,
 .company-cards-link:focus .company-card-icon {
   fill: var(--accent-color);
 }
+.company-cards-link:hover,
+.company-cards-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
 /* Footer */
 
 .footer {
